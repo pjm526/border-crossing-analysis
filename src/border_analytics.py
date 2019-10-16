@@ -76,7 +76,6 @@ for i in range(0,len(temp_list)):
         if dictlist[j][0] == temp_list[i][3]:
             avg_list.append(dictlist[j][1])
 
-print(avg_list)
 #Creating the final output list
 ans_list = []
 j = 0
@@ -95,7 +94,7 @@ with open(output_file,'w') as resultFile:
     wr = csv.writer(resultFile)
     wr.writerow(['Border','Date','Measure','Value','Average'])
     for row in ans_list:
-      wr.writerow(row)
+    	wr.writerow(row)
 
 
 
