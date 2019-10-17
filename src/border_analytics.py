@@ -14,22 +14,22 @@ date_list = []
 
 #Loading data as a nested dictionary in the format (Border, Measure):Date:Value
 with open(input_file, 'r') as file:
-	data = csv.reader(file, delimiter=',')
-	next(data)
-	for row in data:   
-		border = row[3]
-		measure = row[5]
-		date = row[4]
-		value = row[6]
+    data = csv.reader(file, delimiter=',')
+    next(data)
+    for row in data:   
+        border = row[3]
+        measure = row[5]
+        date = row[4]
+        value = row[6]
      
-		final_dict.setdefault((border,measure),{}).setdefault(int(date.split('/')[0])+int(date.split('/')[2][:4])*12,[]).append(int(value))
-		if(date not in date_list):
-			date_list.append(date)
+        final_dict.setdefault((border,measure),{}).setdefault(int(date.split('/')[0])+int(date.split('/')[2][:4])*12,[]).append(int(value))
+        if(date not in date_list):
+            date_list.append(date)
 
 #Calculating the sum of values for each month
 for border, date in final_dict.items():
     for month in date:
-      date[month] = sum(date[month])
+		date[month] = sum(date[month])
       
       
 #Calculating running monthly average of total number of crossings for that type of crossing and border.     
@@ -38,8 +38,8 @@ for types,date in final_dict.items():
 	temp = 0
  	keyList = sorted(date.keys())
 	for i,v in enumerate(keyList):
-    	temp = 0
-    	tot_month = 0
+		temp = 0
+		tot_month = 0
     	for j in range(0,i):
       		temp += date[v-(j+1)]
       		tot_month += 1
