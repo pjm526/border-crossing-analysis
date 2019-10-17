@@ -12,6 +12,7 @@
   1. Initialized another dictionary with sum of value as key and value as the calculated running average.
   2. Maintained the value of sum and total no of months by sorting on date
   3. Further looped on the number of values for each date key.
+  4. The value obtained was rounded up as mentioned (For e: 4.5 -> 5 )
   
 * **Created Lists and merged the corresponding values.**
 
