@@ -20,7 +20,7 @@
 * **Stored output list in a csv file.**
   
 ### Takeaways
-* The given code is developed using python3.7.
+* The given code is developed using python 3.7
 * Libraries like csv, math and sys have been used for file related operations.
 * Script has been run and tested on subsets of dataset as well as on the entire dataset.
 
