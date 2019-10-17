@@ -35,9 +35,9 @@ for border, date in final_dict.items():
 #Calculating running monthly average of total number of crossings for that type of crossing and border.     
 average_dict = {}
 for types,date in final_dict.items():
-	temp = 0
- 	keyList = sorted(date.keys())
-	for i,v in enumerate(keyList):
+    temp = 0
+    keyList = sorted(date.keys())
+    for i,v in enumerate(keyList):
         temp = 0
         tot_month = 0
         for j in range(0,i):
