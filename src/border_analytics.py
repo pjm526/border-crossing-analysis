@@ -3,7 +3,7 @@ import math
 import sys
 
 if not len(sys.argv) == 3:
-    print ("Invalid number of arguments. Run as: python3.7 ./src/border_analytics.py ./input/Border_Crossing_Entry_data.csv ./output/report.cs")
+    print ("Invalid number of arguments. Run as: python3.7 ./src/border_analytics.py ./input/Border_Crossing_Entry_data.csv ./output/report.csv")
     sys.exit()
 
 input_file = sys.argv[1]
