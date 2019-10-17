@@ -26,5 +26,5 @@
 * Script has been run and tested on subsets of dataset as well as on the entire dataset.
 
 ### Challenges
-* Reduce computing power when the entire dataset is used.
+* Reduce computing power when the entire dataset was used.
 * Effective way to iterate through the data.
