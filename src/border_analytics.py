@@ -29,7 +29,7 @@ with open(input_file, 'r') as file:
 #Calculating the sum of values for each month
 for border, date in final_dict.items():
     for month in date:
-		date[month] = sum(date[month])
+        date[month] = sum(date[month])
       
       
 #Calculating running monthly average of total number of crossings for that type of crossing and border.     
@@ -38,14 +38,14 @@ for types,date in final_dict.items():
 	temp = 0
  	keyList = sorted(date.keys())
 	for i,v in enumerate(keyList):
-		temp = 0
-		tot_month = 0
-    	for j in range(0,i):
-      		temp += date[v-(j+1)]
-      		tot_month += 1
-    	if tot_month != 0:
-      		temp = math.ceil(temp/tot_month)
-    	average_dict[date[v]] = temp
+        temp = 0
+        tot_month = 0
+        for j in range(0,i):
+            temp += date[v-(j+1)]
+            tot_month += 1
+        if tot_month != 0:
+            temp = math.ceil(temp/tot_month)
+        average_dict[date[v]] = temp
 
 #Sorting the datelist    
 date_list.sort(reverse=True)   
