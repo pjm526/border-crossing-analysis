@@ -6,7 +6,7 @@
            { (Border, Measure) : { Date : Value}}**
 * **Calculated the total number of crossings across border each month.**
   1. The dictionary was grouped first by a tuple of Border and Measure.
-  2. Performed sum by group on date in the second layer.
+  2. Performed sum by grouping on date in the second layer.
   
 * **Calculated running monthly average of total number of crossings for that type of crossing and border.**
   1. Initialized another dictionary with sum of value as key and value as the calculated running average.
@@ -24,3 +24,6 @@
 * Libraries like csv, math and sys have been used for file related operations.
 * Script has been run and tested on subsets of dataset as well as on the entire dataset.
 
+### Challenges
+* Reduce computing power when the entire dataset is used.
+* Effective way to iterate through the data.
